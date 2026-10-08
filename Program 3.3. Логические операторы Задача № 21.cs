@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Program21
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // Приоритет: ! → && → ||
+            bool res = !true || false && true;
+            // Шаги: (!true) || (false && true) → false || false → false
+
+            Console.WriteLine($"!true || false && true = {res}"); // False
+        }
+    }
+}
+
